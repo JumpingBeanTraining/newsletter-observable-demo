@@ -1,0 +1,21 @@
+{
+  "name": "observables",
+  "version": "1.0.0",
+  "description": "Demo of observables",
+  "main": "index.html",
+  "scripts": {
+    "build": "babel --presets latest observable.es6 --out-file observable.js && browserify --entry  observable.js -o bundle.js"
+  },
+  "keywords": [
+    "observables"
+  ],
+  "author": "The Matrix",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "rxjs": "^5.0.0-rc.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-latest": "^6.16.0"
+  }
+}
